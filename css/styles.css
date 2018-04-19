@@ -80,7 +80,6 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
 }
 
 /* Display list items side by side */
@@ -194,7 +193,23 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
-.inside header {
+
+
+.inside #map-container {
+  background: blue none repeat scroll 0 0;
+  height: 100%;
+  /* position: fixed; */
+  top: 80px;
+  /* width: 50%; */
+}
+
+.inside #map {
+  background-color: #ccc;
+  height: 100%;
+  /* width: 100%; */
+}
+
+/* .inside header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -208,11 +223,7 @@ nav h1 a {
   top: 80px;
   width: 50%;
 }
-.inside #map {
-  background-color: #ccc;
-  height: 100%;
-  width: 100%;
-}
+
 .inside #footer {
   bottom: 0;
   position: absolute;
@@ -283,7 +294,7 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
-}
+} */
 
 /*====================== Responsive Grid ======================*/
 
@@ -357,6 +368,11 @@ nav h1 a {
   padding: 0 2px;
   width: 154px;
 }
+
+.inside col-6{
+  width: 100% !important ;
+}
+
   
 }
 
