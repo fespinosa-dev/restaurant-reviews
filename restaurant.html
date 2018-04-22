@@ -10,10 +10,7 @@
 </head>
 
 <body class="inside">
-  <div class="grid">
     <!-- Beginning header -->
-    <div class="row">
-      <div class="col-12">
         <header>
           <!-- Beginning nav -->
           <nav>
@@ -23,9 +20,6 @@
           </nav>
           <!-- End nav -->
         </header>
-      </div>
-    </div>
-    <div class="col-12">
       <!-- Beginning breadcrumb -->
       <ul id="breadcrumb">
         <li>
@@ -33,21 +27,16 @@
         </li>
       </ul>
       <!-- End breadcrumb -->
-    </div>
+
     <!-- End header -->
     <!-- Beginning main -->
+<div class="grid">
+
     <main id="maincontent">
       <!-- Beginning map -->
-      <div class="row">
-        <div class="col-12">
-          <section id="map-container">
-            <div id="map"></div>
-          </section>
-        </div>
-      </div>
       <!-- End map -->
       <div class="row">
-        <div class="col-12">
+        <div class="col-6">
           <!-- Beginning restaurant -->
           <section id="restaurant-container">
             <h1 id="restaurant-name"></h1>
@@ -63,22 +52,28 @@
           </section>
           <!-- End reviews -->
         </div>
+        <div class="col-6">
+          <section id="map-container">
+            <div id="map"></div>
+          </section>
+        </div>
       </div>
       <!-- End main -->
       <!-- Beginning footer -->
       <div class="row">
         <div class="col-12">
-                <footer id="footer">
-                  Copyright (c) 2017
-                  <a href="/">
-                    <strong>Restaurant Reviews</strong>
-                  </a> All Rights Reserved.
-                </footer>
+          <footer id="footer">
+            Copyright (c) 2017
+            <a href="/">
+              <strong>Restaurant Reviews</strong>
+            </a> All Rights Reserved.
+          </footer>
         </div>
       </div>
       <!-- End footer -->
       <!-- Beginning scripts -->
       <!-- Database helpers -->
+    </main>
   </div>
   <script src="js/dbhelper.js" type="text/javascript">
   </script>
@@ -90,9 +85,9 @@
 
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX_glw0xmRsBOPwpqqz3LiztBCYlvzErs&callback=initMap"
     type="text/javascript">
-    </script>
+  </script>
   <!-- End scripts -->
-  </main>
+
 </body>
 
 </html>
