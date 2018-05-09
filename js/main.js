@@ -136,11 +136,11 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
 /**
  * Create restaurant HTML.
  */
-createRestaurantHTML = (restaurant) => {
+createRestaurantHTML = (restaurant, altImages = self.config.ALT_IMG) => {
   const article = document.createElement('article');
   article.tabIndex = 0;
   const image = document.createElement('img');
-  image.alt = restaurant.img_alt;
+  image.alt = altImages[restaurant.id];
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   article.append(image);

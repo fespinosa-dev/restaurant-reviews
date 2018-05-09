@@ -1,6 +1,8 @@
 let restaurant;
 var map;
 
+
+
 /**
  * Initialize Google map, called from HTML.
  */
@@ -45,10 +47,12 @@ fetchRestaurantFromURL = (callback) => {
   }
 }
 
+
+
 /**
  * Create restaurant HTML and add it to the webpage
  */
-fillRestaurantHTML = (restaurant = self.restaurant) => {
+fillRestaurantHTML = (restaurant = self.restaurant, altImages = self.config.ALT_IMG) => {
   const name = document.getElementById('restaurant-name');
   name.innerHTML = restaurant.name;
 
@@ -57,7 +61,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
 
   const image = document.getElementById('restaurant-img');
   image.className = 'restaurant-img'
-  image.alt = restaurant.img_alt;
+  image.alt = altImages[restaurant.id];
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
 
   const cuisine = document.getElementById('restaurant-cuisine');
