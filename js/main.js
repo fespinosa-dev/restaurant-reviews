@@ -144,7 +144,7 @@ createRestaurantHTML = (restaurant, altImages = self.config.ALT_IMG) => {
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   article.append(image);
-  const name = document.createElement('h1');
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
   article.append(name);
   const neighborhood = document.createElement('p');

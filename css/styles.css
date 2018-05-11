@@ -299,7 +299,8 @@ header {
 }
 
 #reviews-container 
-h2 {
+h2,
+h3 {
   color: #f58500;
   font-size: 24pt;
   font-weight: 300;
