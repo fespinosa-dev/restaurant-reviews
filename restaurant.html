@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <!-- Main CSS file -->
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <title>Restaurant Info</title>
@@ -39,7 +40,13 @@
             <img alt="" id="restaurant-img" src="#">
             <p id="restaurant-cuisine"></p>
             <p id="restaurant-address"></p>
-            <table id="restaurant-hours"></table>
+            <table id="restaurant-hours" tabindex="0">
+                <caption>Restaurant operating hours:</caption>
+                <tr>
+                  <th scope="col">DAY</th>
+                  <th scope="col">TIME</th>
+                </tr>
+            </table>
           </section>
           <!-- end restaurant -->
           <!-- Beginning reviews -->
@@ -49,8 +56,8 @@
           <!-- End reviews -->
         </div>
         <div class="col-6">
-          <div id="map-container">
-            <div aria-label="Map with restaurants" id="map" role="application" tabindex="0"></div>
+          <div aria-label="Map with restaurants" id="map-container" role="application" tabindex="0">
+              <div id="map"> </div>
           </div>
         </div>
       </div>
