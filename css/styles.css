@@ -338,8 +338,6 @@ p {
     width: 100%;
 }
 
-.inside .grid{}
-
 .row {
     width: 100%;
     display: flex;
@@ -434,6 +432,9 @@ select{
     height: 250px;
   }
 
+  .inside #restaurant-container{
+    margin-top: 0%;
+  }
 }
 
 @media only screen and (min-width: 960px) {
