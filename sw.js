@@ -8,7 +8,7 @@
     ];
     var CACHE_NAME = 'restaurant-reviews-cache-v1';
 
-    //Caching site asset
+   
     self.addEventListener('install', function (event) {
         event.waitUntil(caches.open(CACHE_NAME).then(function (cache) {
             return cache.addAll(REQUIRED_FILES);
